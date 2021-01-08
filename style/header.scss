@@ -1,0 +1,78 @@
+.header{
+  background-color:$primecolor2;
+  position:relative;
+  color:$primecolor4;
+  width:100%;
+  height:20%;
+box-shadow: 0 3px 3px rgba(black,0.4);
+  display:flex;
+  flex-direction:column;
+align-items:center;
+  justify-content: center;
+text-transform:uppercase;
+  word-spacing:0.5rem;
+  &_logo{
+    width:5rem;
+    height:5rem;
+
+  }
+  &_info{
+    margin-top:1rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+  }
+  &_form{
+    max-width:80%;
+    width:40rem;
+    height:5rem;
+    position:relative;
+
+
+button{
+  position:absolute;
+  top:1rem;
+  right:-1rem;
+  display: flex;
+  align-items:center;
+  justify-content:center;
+  width:3rem;
+  height:3rem;
+  border-radius:50%;
+  background-color:$primecolor4;
+  flex-shrink:0;
+  border:none;
+  img{
+    max-width:50%;
+    max-height:50%;
+
+  }
+  &:focus{
+    outline:none;
+
+  }
+  &:active{
+    outline:none;
+    transform:scale(.9);
+  }
+}
+    margin-top:2rem;
+    input{
+      width:100%;
+      height:3rem;
+      font-family:inherit;
+      word-spacing:.5rem;
+      box-shadow:0 3px 3px rgba(black,0.4);
+      &:focus{
+        outline:none;
+      }
+      border:none;
+      border-radius:50px;
+      margin:1rem;
+      padding:1rem;
+    }
+
+  }
+
+}

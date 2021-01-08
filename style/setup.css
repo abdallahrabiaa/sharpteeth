@@ -1,0 +1,12 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+@font-face {
+  font-family: jsan;
+  src: url("../fonts/JosefinSan.ttf"); }
+:root {
+  font-size: 16px; }
+
+/*# sourceMappingURL=setup.css.map */

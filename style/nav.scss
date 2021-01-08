@@ -1,0 +1,110 @@
+.nav {
+  transition:all .2s;
+  text-transform: uppercase;
+  background-color: $primecolor5;
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 0 3px 3px rgba($Blue, 0.4);
+position:relative;
+  &_collections {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  &_drop {
+    transition:all .2s;
+    display: flex;
+    flex-direction: column;
+    height: 2rem;
+    @media all and (max-width: 650px) {
+      padding: 0;
+    }
+
+  }
+
+  &_list {
+overflow:hidden;
+display:none;
+    transition:all .2s;
+  }
+  &_list_toggle {
+    @media all and (max-width:700px) {
+      height:40vh;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:space-between;
+overflow-y:scroll;
+    }
+    z-index: 100;
+    background-color:$primecolor4;
+    color:$primecolor2;
+    transition: all .2s;
+    border-radius: .5rem;
+    list-style: none;
+    width: 100vw;
+    height: 10vh;
+    max-height: 40vh;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    display: grid;
+    grid-template-columns:repeat(auto-fill, minmax(10%, 1fr));
+    grid-template-rows:repeat(auto-fill, minmax(10%, 1fr));
+    grid-row-gap: 1rem;
+    grid-column-gap:.6rem;
+    padding:.5rem;
+
+    cursor: pointer;
+    box-shadow: 0 3px 3px rgba(black, .4);
+    li {
+      transition: all .2s;
+      &:hover {
+        transform: translateY(4px);
+
+      }
+    }
+  }
+  //border:2px solid $Blue;
+  &_button {
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 10rem;
+    @media all and (max-width: 650px) {
+      width: 6rem;
+      max-width: 100%;
+    }
+    height: 100%;
+    border-radius: 5px;
+    background-color: $primecolor2;
+    box-shadow: 0 3px 3px rgba(black, 0.4);
+    font-family: inherit;
+    outline: none;
+    border: none;
+    color: $primecolor5;
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+
+    &:active {
+
+      transform: scale(.9);
+    }
+
+}
+    }
+
+
+
+
+
+
+

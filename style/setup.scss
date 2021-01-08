@@ -1,0 +1,35 @@
+$greyE:#8d93ab;
+$Blue: #14213d;
+$black1:#393e46;
+$black2:#000000;
+$yellow:#fca311;
+$white:#ffffff;
+$yellown2:#fbfd8a;
+$notaColor:#c70039;
+$redNav:#900c3f;
+$goodBlue:#537ec5;
+$greyWhite:#eeeeee;
+$primecolor1:#f0a500;
+$primecolor2:#f4f4f4;
+$primecolor3:#cf7500;
+$primecolor4:#1a1c20;
+$primecolor5:#fca311;
+*{
+ box-sizing:border-box;
+  padding:0;
+  margin:0;
+}
+@font-face{
+font-family:jsan;
+  src:url("../fonts/JosefinSan.ttf");
+}
+:root{
+  font-size:16px;
+font-family:jsan,sans-serif;;
+}
+body{
+  background-color:$primecolor2;
+  color:$primecolor5;
+overflow-x:hidden;
+
+}

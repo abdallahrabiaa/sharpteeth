@@ -1,0 +1,95 @@
+@keyframes modalOPacity{
+  0%{
+opacity:0;
+  }
+  100%{
+    opacity:100%;
+  }
+}
+
+.modal_container{
+  z-index:100;
+  display:none;
+  &_show{
+display:block;
+}
+  position:fixed;
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  background-color:rgba(0,0,0,.6);
+  height: 100%;
+  width:100%;
+}
+.modal {
+  animation-name:modalOPacity;
+  animation-duration:.8s;
+  z-index:1000;
+  border-radius:.5rem;
+  box-shadow: 0 3px 3px rgba(black,0.4);
+  &:before{
+    border-radius:.5rem;
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:url('../imgs/breakfast.svg');
+    opacity:.4;
+
+  }
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  flex-direction:column;
+  @media all and (max-width:600px){
+    max-width:100%;
+    max-height:400px;
+  }
+  width:600px;
+  height:400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: $primecolor4;
+  transform: translate(-50%,-50%);
+    &_toggle_button {
+      font-size: 2rem;
+      position:absolute;
+      top:-.6rem;
+      right:0;
+      display: inline-block;
+    }
+
+    &_heading {
+      font-size: 2rem;
+      color: $primecolor2;
+      text-transform:uppercase;
+    }
+
+  &_header{
+    position:relative;
+    padding:1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+  }
+  &_inner{
+margin:auto;
+    color:$primecolor2;
+    text-transform:uppercase;
+    font-size :2rem;
+    line-height: 1.8rem;
+    p{
+      display: block;
+      position:static;
+     z-index:10;
+    }
+  }
+  }
+
+
+
+

@@ -1,0 +1,23 @@
+.footer {
+margin-top:10rem;
+  background-color: $primecolor4;
+  color: $primecolor2;
+
+  h3 {
+    span {
+      color: $primecolor2;
+      text-transform: uppercase;
+
+    }
+
+  }
+
+  @media all and (max-width: 600px) {
+    height:10%;
+    box-shadow: 0 3px 3px rgba(black, 0.4);
+    svg {
+
+    }
+  }
+}
+
